@@ -1,0 +1,13 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: #81b29a;
+  font-family: "Source Code Pro", monospace;
+}
+.hidden {
+  display: none;
+}
+.rotate {
+  transform: rotate(180deg);
+}

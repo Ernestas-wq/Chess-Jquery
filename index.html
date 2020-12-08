@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets\dist\css\main.min.css" />
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@700;900&family=Source+Code+Pro:wght@700&display=swap" rel="stylesheet">
+ 
+
+<title>Chess jquery</title>
+</head>
+  <body>
+<div class="boardSlideShow">
+<div class="boardSlideShow__wrapper slick">
+    <div> 
+      <div class="boardSlideShow__slide boardSlideShow__slide--1"></div>
+      </div>
+    <div><div class="boardSlideShow__slide boardSlideShow__slide--2"></div></div>
+    <div><div class="boardSlideShow__slide boardSlideShow__slide--3"></div></div>
+    <div><div class="boardSlideShow__slide boardSlideShow__slide--4"></div></div>
+
+  </div>
+    </div>
+    <div class="header"><h1>Chess jquery 1.01</h1>
+    </div>
+    <div class="game">
+    <div class="board" id="board">
+     
+      <div class="row">      
+        <div class="row__rowPrefix"><p>A</p></div>
+                <div class="row__rowPrefix"><p>B</p></div>
+       <div class="row__rowPrefix"><p>C</p></div>
+        <div class="row__rowPrefix"><p>D</p></div>
+      <div class="row__rowPrefix"><p>E</p></div>
+        <div class="row__rowPrefix"><p>F</p></div>
+       <div class="row__rowPrefix"><p>G</p></div>
+       <div class="row__rowPrefix"><p>H</p></div>
+
+</div>
+      <div class="row">
+        <div class="row__colPrefix">8</div>
+
+      <div row="8" column="1" class="square-grey" player="black" piece="rook"></div>
+      
+      <div row="8" column="2" class="square " player="black" piece="knight"></div>
+      <div row="8" column="3" class="square-grey" player="black" piece="bishop"></div>
+      <div row="8" column="4" class="square" player="black" piece="queen"></div>
+      <div row="8" column="5" class="square-grey" player="black" piece="king"></div>
+      <div row="8" column="6" class="square" player="black" piece="bishop"></div>
+      <div row="8" column="7" class="square-grey" player="black" piece="knight"></div>
+      <div row="8" column="8" class="square" player="black" piece="rook"></div>
+                      <div class="row__colPrefix">8</div>
+
+      </div>
+      <div class="row">
+        <div class="row__colPrefix">7</div>
+      <div class="square" row="7" column="1" player="black" piece="pawn"></div>
+      <div class="square-grey" row="7" column="2" player="black" piece="pawn"></div>
+      <div class="square" row="7" column="3" player="black" piece="pawn"></div>
+      <div class="square-grey" row="7" column="4" player="black" piece="pawn"></div>
+      <div class="square" row="7" column="5" player="black" piece="pawn"></div>
+      <div class="square-grey" row="7" column="6" player="black" piece="pawn"></div>
+      <div class="square" row="7" column="7" player="black" piece="pawn"></div>
+      <div class="square-grey" row="7" column="8" player="black" piece="pawn"></div>
+                      <div class="row__colPrefix">7</div>
+
+      </div>
+      <div class="row">
+                <div class="row__colPrefix">6</div>
+
+      <div class="square-grey" row="6" column="1" player="" piece=""></div>
+      <div class="square" row="6" column="2" player="" piece=""></div>
+      <div class="square-grey" row="6" column="3" player="" piece=""></div>
+      <div class="square" row="6" column="4" player="" piece=""></div>
+      <div class="square-grey" row="6" column="5" player="" piece=""></div>
+      <div class="square" row="6" column="6" player="" piece=""></div>
+      <div class="square-grey" row="6" column="7" player="" piece=""></div>
+      <div class="square" row="6" column="8" player="" piece=""></div>
+                      <div class="row__colPrefix">6</div>
+
+      </div>
+      <div class="row">
+                <div class="row__colPrefix">5</div>
+
+      <div class="square" row="5" column="1" player="" piece=""></div>
+      <div class="square-grey" row="5" column="2" player="" piece=""></div>
+      <div class="square" row="5" column="3" player="" piece=""></div>
+      <div class="square-grey" row="5" column="4" player="" piece=""></div>
+      <div class="square" row="5" column="5" player="" piece=""></div>
+      <div class="square-grey" row="5" column="6" player="" piece=""></div>
+      <div class="square" row="5" column="7" player="" piece=""></div>
+      <div class="square-grey" row="5" column="8" player="" piece=""></div>
+                      <div class="row__colPrefix">5</div>
+
+      </div>
+            <div class="row">
+        <div class="row__colPrefix">4</div>
+
+      <div class="square-grey" row="4" column="1" player="" piece=""></div>
+      <div class="square" row="4" column="2" player="" piece=""></div>
+      <div class="square-grey" row="4" column="3" player="" piece=""></div>
+      <div class="square" row="4" column="4" player="" piece=""></div>
+      <div class="square-grey" row="4" column="5" player="" piece=""></div>
+      <div class="square" row="4" column="6" player="" piece=""></div>
+      <div class="square-grey" row="4" column="7" player="" piece=""></div>
+      <div class="square" row="4" column="8" player="" piece=""></div>
+                      <div class="row__colPrefix">4</div>
+
+      </div>
+      <div class="row">
+                <div class="row__colPrefix">3</div>
+
+      <div class="square" row="3" column="1" player="" piece=""></div>
+      <div class="square-grey" row="3" column="2" player="" piece=""></div>
+      <div class="square" row="3" column="3" player="" piece=""></div>
+      <div class="square-grey" row="3" column="4" player="" piece=""></div>
+      <div class="square" row="3" column="5" player="" piece=""></div>
+      <div class="square-grey" row="3" column="6" player="" piece=""></div>
+      <div class="square" row="3" column="7" player="" piece=""></div>
+      <div class="square-grey" row="3" column="8" player="" piece=""></div>
+                      <div class="row__colPrefix">3</div>
+
+      </div>
+      <div class="row">
+                <div class="row__colPrefix">2</div>
+
+      <div class="square-grey" row="2" column="1" player="white" piece="pawn"></div>
+      <div class="square" row="2" column="2" player="white" piece="pawn"></div>
+      <div class="square-grey" row="2" column="3" player="white" piece="pawn"></div>
+      <div class="square" row="2" column="4" player="white" piece="pawn"></div>
+      <div class="square-grey" row="2" column="5" player="white" piece="pawn"></div>
+      <div class="square" row="2" column="6" player="white" piece="pawn"></div>
+      <div class="square-grey" row="2" column="7" player="white" piece="pawn"></div>
+      <div class="square" row="2" column="8" player="white" piece="pawn"></div>
+                      <div class="row__colPrefix">2</div>
+
+      </div>
+      <div class="row">
+                <div class="row__colPrefix">1</div>
+
+      <div class="square" row="1" column="1" player="white" piece="rook"></div>
+      <div class="square-grey" row="1" column="2" player="white" piece="knight"></div>
+      <div class="square" row="1" column="3" player="white" piece="bishop"></div>
+      <div class="square-grey" row="1" column="4" player="white" piece="queen"></div>
+      <div class="square" row="1" column="5" player="white" piece="king"></div>
+      <div class="square-grey" row="1" column="6" player="white" piece="bishop"></div>
+      <div class="square" row="1" column="7" player="white" piece="knight"></div>
+      <div class="square-grey" row="1" column="8" player="white" piece="rook"></div>
+                      <div class="row__colPrefix">1</div>
+
+      </div>
+        <div class="row">    
+        <div class="row__colPrefix"></div>
+        <div class="row__rowPrefix"><p>A</p></div>
+       <div class="row__rowPrefix"><p>B</p></div>
+       <div class="row__rowPrefix"><p>C</p></div>
+       <div class="row__rowPrefix"><p>D</p></div>
+      <div class="row__rowPrefix"><p>E</p></div>
+        <div class="row__rowPrefix"><p>F</p></div>
+       <div class="row__rowPrefix"><p>G</p></div>
+       <div class="row__rowPrefix"><p>H</p></div>
+        <div class="row__colPrefix"></div>
+
+
+</div>
+    </div>
+    <div class="boardUi">
+      <div class="boardUi__heading"><p>Game menu</p></div>
+      <div class="boardUi__gameMessage"><p class="hidden" id="gameMessage">Something happens!</p></div>
+      <button class="boardUi__button" id="flipBoard">Flip the board</button>
+      <button class="boardUi__button" id="themeDefault">Default theme</button>
+      <button class="boardUi__button" id="theme1">Theme 1</button>
+      <button class="boardUi__button" id="theme2">Theme 2</button>
+            <button class="boardUi__button" id="restart">Restart game</button>
+
+
+     
+</div>
+
+
+
+  </body>
+    <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="/node_modules/slick-carousel/slick/slick.min.js"></script>
+    
+    <script src="/js/init.js"></script>
+    <script src="/js/moves.js"></script>
+    <script src="/js/game.js"></script>
+    <script src="/js/misc.js"></script>
+    <script src="/js/main.js"></script>
+</html>
