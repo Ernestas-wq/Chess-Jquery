@@ -179,3 +179,13 @@ $("#flipBoard").on("click", function () {
     tracker++;
   }
 });
+// Piece count
+function getPieceCount() {
+  let pieceCount = 0;
+  $("[piece]").each(function () {
+    if ($(this).attr("empty") === "false") {
+      pieceCount++;
+    }
+  });
+  return pieceCount;
+}
